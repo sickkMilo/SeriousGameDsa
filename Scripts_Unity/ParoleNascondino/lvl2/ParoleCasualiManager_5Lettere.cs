@@ -199,7 +199,7 @@ public class ParoleCasualiManager_5Lettere : MonoBehaviour
         yield return new WaitForSeconds(2f);
         livelloCompletatoPanel.SetActive(false);
         ResetLivello();
-        verificaButton.interactable = true; // ✅ Riabilita il pulsante per la prossima parola
+        verificaButton.interactable = true; //  Riabilita il pulsante per la prossima parola
     }
 
 

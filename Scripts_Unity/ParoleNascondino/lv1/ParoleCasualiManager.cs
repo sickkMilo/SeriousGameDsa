@@ -49,13 +49,13 @@ public class ParoleCasualiManager : MonoBehaviour
 
     void GeneraLettere()
     {
-        // 🔡 Estrai lettere della parola corrente
+        //  Estrai lettere della parola corrente
         List<char> lettereFinali = new List<char>(parolaCorrente.ToCharArray());
 
-        // 🔀 Mescola l’ordine delle lettere
+        // Mescola l’ordine delle lettere
         lettereFinali = Mischia(lettereFinali);
 
-        // 🔁 Genera oggetti lettera
+        // Genera oggetti lettera
         for (int i = 0; i < lettereFinali.Count; i++)
         {
             GameObject letterObj = Instantiate(letterButtonPrefab, spawnPositions[i].position, Quaternion.identity, spawnPositions[i]);
@@ -210,7 +210,7 @@ public class ParoleCasualiManager : MonoBehaviour
 
         lettereAttive.Clear();
 
-        // 🔄 Scegli una nuova parola diversa dalla precedente
+        // Scegli una nuova parola diversa dalla precedente
         do
         {
             parolaCorrente = parole[Random.Range(0, parole.Length)];
